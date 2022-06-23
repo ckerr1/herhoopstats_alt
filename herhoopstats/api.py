@@ -107,7 +107,7 @@ class HerHoopStats:
         full_url = (
             f"https://herhoopstats.com/stats/ncaa/research/"
             f"team_single_seasons/?min_season={min_season}&max_season={max_season}&division={divison}"
-            f"&games=all&stats_to_show=summary&submit=true"
+            f"&games=all&stats_to_show=totals&submit=true"
         )
         return self._get_table_at_page(full_url, Team, attach_links=True)
 
